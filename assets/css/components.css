@@ -124,6 +124,7 @@
 .btn__icon {
     width: 22px;
     height: 22px;
+    color: white;
 }
 .btn--primary {
 
@@ -141,9 +142,8 @@
 
 .btn--secondary {
 
-    background: white;
-
-    color: var(--primary);
+    background: #0C686B;
+    color: white;
 }
 
 .btn--secondary:hover {
