@@ -38,15 +38,15 @@ if (budgetForm) {
 
 `Olá, gostaria de solicitar um orçamento.
 
-👤 Nome: ${nome}
+*Nome*: ${nome}
 
-📞 Telefone: ${telefone}
+*Telefone*: ${telefone}
 
-🔧 Serviço: ${servico}
+*Serviço*: ${servico}
 
-⚡ Urgência: ${urgencia}
+*Urgência*: ${urgencia}
 
-📍 Local: ${local}
+*Local*: ${local}
 
 📝 Descrição:
 ${descricao}`;
