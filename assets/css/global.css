@@ -1,0 +1,129 @@
+body {
+
+    font-family:
+        "Inter",
+        "Segoe UI",
+        sans-serif;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+body {
+
+    font-family:
+        "Inter",
+        "Segoe UI",
+        sans-serif;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+body.menu-open {
+
+    overflow: hidden;
+}
+
+.container {
+
+    width: min(
+        var(--container),
+        calc(100% - 40px)
+    );
+
+    margin: 0 auto;
+}
+
+.section {
+
+    padding: 120px 0;
+}
+
+.subtitle {
+
+    display: inline-block;
+
+    color: var(--primary-light);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.section-title {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 70px;
+}
+
+.section-title h2 {
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+.section-title p {
+
+    color: #6d7a80;
+
+    font-size: 18px;
+}
+
+.page-hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-light)
+        );
+
+    color: white;
+
+    padding: 160px 0 120px;
+}
+
+.page-hero h1 {
+
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    max-width: 900px;
+
+    margin-bottom: 25px;
+}
+
+.page-hero p {
+
+    font-size: 20px;
+
+    max-width: 700px;
+
+    opacity: .9;
+}

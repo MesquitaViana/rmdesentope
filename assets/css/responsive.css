@@ -1,0 +1,365 @@
+/* ==========================================
+   DESKTOP MÉDIO
+========================================== */
+
+@media (max-width: 1400px) {
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .page-hero h1 {
+        font-size: 56px;
+    }
+
+    .service-grid h2 {
+        font-size: 42px;
+    }
+
+}
+
+/* ==========================================
+   NOTEBOOK
+========================================== */
+
+@media (max-width: 1200px) {
+
+    .hero__grid,
+    .about__grid,
+    .contact__grid,
+    .service-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero {
+
+        min-height: auto;
+
+        padding-top: 180px;
+        padding-bottom: 100px;
+    }
+
+    .hero__card {
+
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .menu-toggle {
+        display: block;
+        color: var(--primary);
+        font-size: 30px;
+        z-index: 10001;
+    }
+
+    .header .btn {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 82%;
+        max-width: 360px;
+        height: 100vh;
+        background: #ffffff;
+        padding: 100px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        box-shadow: -20px 0 60px rgba(0,0,0,.18);
+        transition: right .35s ease;
+        z-index: 10000;
+    }
+
+    .nav.nav--active {
+        right: 0;
+    }
+
+    .nav a {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 18px;
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+}
+
+/* ==========================================
+   CELULAR GRANDE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .section {
+
+        padding: 80px 0;
+    }
+
+    .page-hero {
+
+        padding: 130px 0 80px;
+    }
+
+    .hero {
+
+        padding-top: 130px;
+    }
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+    .page-hero h1 {
+
+        font-size: 40px;
+    }
+
+    .hero p,
+    .page-hero p {
+
+        font-size: 18px;
+    }
+
+    .hero__actions {
+
+        flex-direction: column;
+    }
+
+    .hero__actions .btn {
+
+        width: 100%;
+    }
+
+    .cards {
+
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+
+        gap: 35px;
+    }
+
+    .service-grid h2 {
+
+        font-size: 34px;
+    }
+
+    .form {
+
+        padding: 30px;
+    }
+
+        .footer {
+        padding: 40px 0;
+    }
+
+    .footer__content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 12px;
+    }
+
+    .footer p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+}
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 576px) {
+
+    .container {
+
+        width: calc(100% - 30px);
+    }
+
+    .logo {
+
+        font-size: 20px;
+    }
+
+    .logo__icon {
+
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero h1 {
+
+        font-size: 34px;
+
+        line-height: 1.1;
+    }
+
+    .page-hero h1 {
+
+        font-size: 34px;
+
+        line-height: 1.1;
+    }
+
+    .section-title h2 {
+
+        font-size: 32px;
+    }
+
+    .service-grid h2 {
+
+        font-size: 30px;
+    }
+
+    .cta h2 {
+
+        font-size: 32px;
+    }
+
+    .hero__stats {
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .hero__card {
+
+        padding: 30px;
+    }
+
+    .about__box {
+
+        padding: 30px;
+    }
+
+    .form {
+
+        padding: 25px;
+    }
+
+    .btn {
+
+        width: 100%;
+    }
+
+    .whatsapp-float {
+
+        width: 60px;
+        height: 60px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* ==========================================
+   CELULAR PEQUENO
+========================================== */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+    .page-hero h1 {
+
+        font-size: 30px;
+    }
+
+    .section-title h2 {
+
+        font-size: 28px;
+    }
+
+    .service-grid h2 {
+
+        font-size: 26px;
+    }
+
+    .cta h2 {
+
+        font-size: 28px;
+    }
+
+}
+
+/* ==========================================
+    Serviços
+========================================== */
+@media (max-width: 992px) {
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-grid img {
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .service-section {
+        padding: 70px 0;
+    }
+
+    .service-grid img {
+        height: 280px;
+    }
+
+    .service-grid h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .service-grid img {
+        height: 220px;
+    }
+
+}

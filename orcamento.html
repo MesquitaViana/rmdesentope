@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Orçamento | Caça Vazamento, Encanador e Reformas</title>
+    
+
+    <meta name="description"
+        content="Solicite orçamento para caça vazamento, encanador, telhados, infiltrações e reformas em geral. Atendimento rápido pelo WhatsApp.">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header__content">
+
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo/logo_rm.png" alt="HidroReforma Pro" class="logo__img">
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="orcamento.html">Orçamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <a href="orcamento.html" class="btn btn--primary">
+            Solicitar Orçamento
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container">
+                <span class="subtitle">Solicitar orçamento</span>
+
+                <h1>
+                    Explique seu problema e receba atendimento rápido.
+                </h1>
+
+                <p>
+                    Preencha o formulário abaixo. Ao enviar, sua mensagem será aberta
+                    automaticamente no WhatsApp com todas as informações organizadas.
+                </p>
+            </div>
+        </section>
+
+        <section class="section orçamento-page">
+            <div class="container contact__grid">
+
+                <div>
+                    <span class="subtitle">Atendimento direto</span>
+
+                    <h2>
+                        Quanto mais detalhes você enviar, mais rápido conseguimos avaliar.
+                    </h2>
+
+                    <p>
+                        Informe o tipo de serviço, endereço aproximado, urgência e descreva
+                        o problema com clareza. Se possível, envie fotos ou vídeos pelo WhatsApp
+                        após abrir a conversa.
+                    </p>
+
+                    <div class="features">
+                        <div>
+                            <strong>Caça vazamento</strong>
+                            <p>Ideal para conta alta, manchas, infiltrações e umidade.</p>
+                        </div>
+
+                        <div>
+                            <strong>Telhados e goteiras</strong>
+                            <p>Informe se o problema acontece somente em dias de chuva.</p>
+                        </div>
+
+                        <div>
+                            <strong>Reformas e reparos</strong>
+                            <p>Descreva o ambiente, o tipo de serviço e a urgência.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form" id="budgetForm">
+
+                    <label>
+                        Nome completo
+                        <input type="text" id="budgetName" placeholder="Digite seu nome" required>
+                    </label>
+
+                    <label>
+                        Telefone
+                        <input type="tel" id="budgetPhone" placeholder="(00) 00000-0000" required>
+                    </label>
+
+                    <label>
+                        Tipo de serviço
+                        <select id="budgetService" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="Caça vazamento">Caça vazamento</option>
+                            <option value="Encanador">Encanador</option>
+                            <option value="Telhados">Telhados</option>
+                            <option value="Infiltrações">Infiltrações</option>
+                            <option value="Calhas">Calhas</option>
+                            <option value="Reformas em geral">Reformas em geral</option>
+                            <option value="Outro serviço">Outro serviço</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Urgência
+                        <select id="budgetUrgency" required>
+                            <option value="">Selecione</option>
+                            <option value="Emergencial">Emergencial</option>
+                            <option value="Hoje">Hoje</option>
+                            <option value="Esta semana">Esta semana</option>
+                            <option value="Sem urgência">Sem urgência</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Bairro ou cidade
+                        <input type="text" id="budgetLocation" placeholder="Ex: Centro, São Paulo" required>
+                    </label>
+
+                    <label>
+                        Descrição do problema
+                        <textarea id="budgetMessage" rows="5"
+                            placeholder="Descreva o que está acontecendo..." required></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn--primary">
+                        Enviar orçamento pelo WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta__content">
+
+                <div>
+                    <h2>
+                        Prefere falar direto?
+                    </h2>
+
+                    <p>
+                        Clique no botão e chame nossa equipe pelo WhatsApp.
+                    </p>
+                </div>
+
+                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn--secondary">
+                    Chamar no WhatsApp
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__content">
+
+            <p>
+                Especialistas em caça vazamento, encanador,
+                telhados e reformas em geral.
+            </p>
+
+            <div class="footer__contact">
+
+                <a href="tel:+5500000000000">
+                    (00) 00000-0000
+                </a>
+
+                <a href="mailto:contato@empresa.com.br">
+                    contato@empresa.com.br
+                </a>
+
+            </div>
+
+            <span>
+                © 2026 HidroReforma Pro. Todos os direitos reservados.
+            </span>
+
+              <div class="footer__developer">
+                Desenvolvido por <strong>GMV Corp</strong>
+            </div>
+            
+        </div>
+
+    </div>
+
+</footer>
+
+        <a href="https://wa.me/5500000000000"
+   target="_blank"
+   class="whatsapp-float"
+   aria-label="WhatsApp">
+
+    <img
+        src="assets/img/icons/whatsapp-float.svg"
+        alt="WhatsApp"
+        class="whatsapp-icon">
+
+        </a>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+
+</body>
+
+</html>

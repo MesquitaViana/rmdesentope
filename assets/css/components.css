@@ -1,0 +1,828 @@
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    background: rgba(255,255,255,.96);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.header__content {
+
+    height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    color: var(--primary);
+}
+
+.logo__icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: var(--primary);
+
+    color: white;
+}
+
+.logo__img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+.nav a {
+
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.nav a:hover {
+
+    color: var(--primary-light);
+}
+
+.nav .active {
+
+    color: var(--primary-light);
+
+    font-weight: 700;
+}
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    border-radius: 999px;
+
+    transition: var(--transition);
+
+    font-weight: 700;
+}
+
+.btn__icon {
+    width: 22px;
+    height: 22px;
+}
+.btn--primary {
+
+    background: var(--primary-light);
+
+    color: white;
+}
+
+.btn--primary:hover {
+
+    background: var(--primary);
+
+    transform: translateY(-2px);
+}
+
+.btn--secondary {
+
+    background: white;
+
+    color: var(--primary);
+}
+
+.btn--secondary:hover {
+
+    transform: translateY(-2px);
+}
+
+.btn--outline {
+
+    border: 2px solid white;
+
+    color: white;
+}
+
+.btn--outline:hover {
+
+    background: white;
+
+    color: var(--primary);
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-light)
+        );
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    padding-top: 120px;
+}
+
+.hero__grid {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr .8fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.hero h1 {
+
+    font-size: 68px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+
+    font-size: 20px;
+
+    opacity: .95;
+
+    margin-bottom: 35px;
+}
+
+.badge {
+
+    display: inline-flex;
+
+    padding: 12px 20px;
+
+    background: rgba(255,255,255,.15);
+
+    border-radius: 999px;
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.hero__actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.hero__stats {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.hero__stats strong {
+
+    display: block;
+
+    font-size: 32px;
+}
+
+.hero__stats span {
+
+    font-size: 14px;
+
+    opacity: .85;
+}
+
+.hero__card {
+
+    background: white;
+
+    color: var(--text);
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.hero__card h2 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.hero__card p {
+
+    color: #67757c;
+
+    margin-bottom: 25px;
+}
+
+.hero__card ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.hero__card li {
+
+    font-weight: 600;
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.card--image {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card__content {
+    padding: 30px;
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+}
+
+.card p {
+
+    color: #6f7a80;
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about {
+
+    background: var(--gray-50);
+}
+
+.about__grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 500px;
+
+    gap: 80px;
+}
+
+.features {
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.features div {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+}
+
+.features strong {
+
+    display: block;
+
+    color: var(--primary);
+
+    margin-bottom: 10px;
+}
+
+.about__box {
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+}
+
+.about__box h3 {
+
+    margin-bottom: 25px;
+}
+
+.about__box ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* ==========================================
+   PROCESSO
+========================================== */
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.step {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.step span {
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    color: var(--primary-light);
+}
+
+.step h3 {
+
+    margin: 15px 0;
+}
+
+/* ==========================================
+   SERVIÇOS
+========================================== */
+
+/* ==========================================
+   SERVIÇOS
+========================================== */
+
+.service-section {
+    padding: 120px 0;
+}
+
+.service-section--gray {
+    background: var(--gray-50);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.service-grid > div:has(img) {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: var(--shadow-lg);
+}
+
+.service-grid img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 30px;
+}
+
+.service-grid h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+.service-grid p {
+    color: #67757c;
+    margin-bottom: 20px;
+}
+
+.service-grid ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ==========================================
+   FORMULÁRIOS
+========================================== */
+
+.form {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.form label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+.form input,
+.form textarea,
+.form select {
+
+    border: 1px solid #d9e0e3;
+
+    border-radius: 15px;
+
+    padding: 15px;
+}
+
+.form textarea {
+
+    min-height: 160px;
+}
+
+/* ==========================================
+   CONTATO
+========================================== */
+
+.contact__grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 600px;
+
+    gap: 70px;
+}
+
+.contact__info {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact__info a {
+
+    font-weight: 600;
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.cta {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--primary-light)
+        );
+
+    color: white;
+
+    padding: 100px 0;
+}
+
+.cta__content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.cta h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+.footer {
+
+    background: var(--dark);
+
+    color: white;
+
+    padding: 50px 0;
+}
+
+.footer__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 20px;
+}
+
+.footer__logo {
+
+    width: 180px;
+
+    height: auto;
+}
+
+.footer__contact {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.footer__contact a {
+
+    color: white;
+
+    font-weight: 600;
+}
+
+.footer span {
+
+    color: rgba(255,255,255,.6);
+
+    font-size: 14px;
+}
+
+.footer__developer {
+
+    margin-top: 10px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    width: 100%;
+
+    text-align: center;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 14px;
+}
+
+.footer__developer strong {
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 12px;
+}
+/* ==========================================
+   WHATSAPP FIXO
+========================================== */
+
+.whatsapp-float {
+
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 9999;
+
+    transition: .3s ease;
+}
+
+.whatsapp-float:hover {
+
+    transform: scale(1.08);
+
+}
+
+.whatsapp-icon {
+
+    width: 70px;
+    height: 70px;
+
+    filter: drop-shadow(
+        0 15px 35px rgba(0,0,0,.25)
+    );
+}
+
+/* ==========================================
+   ANIMAÇÕES
+========================================== */
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* ==========================================
+   HEADER SCROLL
+========================================== */
+
+.header--scroll {
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   MENU MOBILE
+========================================== */
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+.nav--active {
+
+    display: flex !important;
+}
+
+/* ==========================================
+   WHATSAPP
+========================================== */
+
+.whatsapp-float {
+
+    opacity: .9;
+
+    transition: .3s ease;
+}
+
+.whatsapp-float:hover {
+
+    transform: scale(1.08);
+}
+
+.whatsapp-float.visible {
+
+    opacity: 1;
+}
