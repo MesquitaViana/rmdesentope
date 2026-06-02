@@ -2,7 +2,7 @@
    CONFIGURAÇÃO
 ========================================== */
 
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511972564867";
 
 /* ==========================================
    FORMULÁRIO DE ORÇAMENTO
